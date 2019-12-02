@@ -1,0 +1,1864 @@
+﻿/*my css section where small my different webpage elements are being styled*/
+*{
+    margin:0px;
+}
+body {
+    background-color:#fff;
+}
+#Home-section-header {
+    background-color: darkslategray;
+    height: 33px;
+    width: 100%;
+    padding: 8px 8px;
+   
+}
+.additional-icon {
+    height: 20px;
+    position: absolute;
+    background-color: darkcyan;
+    width: 82px;
+    margin-left: 5.85%;
+    margin-top: -5px;
+}
+.sd1 {
+    /*the ribbon that is under the image logo*/
+    height: 40px;
+    position: relative;
+    background-color: darkcyan;
+    width:100%;
+    margin-bottom: 170px;
+}
+    .sd1:before, .sd1:after {
+        /*the ribbon that is under the image logo*/
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 80%;
+        top: 10px;
+        left: 0;
+        background-color: darkcyan;
+        transform: skewY(20deg);
+        z-index: -1;
+    }
+.sd1:after {
+  transform: skewY(-20deg);
+ }
+ .first-navigation { /*here */
+     display: block;
+     float: right;
+     list-style-type: none;
+     overflow: hidden;
+     margin-right: 18%;
+     margin-top: 10px;
+}
+.header-icon123 {
+    margin-top: -52px;
+    height: 112px;
+    width: 145px;
+    margin-left: 4.1%;
+}
+.first-navigation li {
+    float: left;
+    margin-right: 20px;
+    transition-duration: 0.5s;
+    display:inline-block;
+}
+.first-navigation li:hover {
+    cursor:pointer;
+}
+ .first-navigation li ul {
+
+   min-width: 100%; /* Set width of the dropdown */
+   background: darkslategrey;
+   display: none;
+   position: absolute;
+   z-index: 999;
+   margin-top: 2px;
+}
+.first-navigation li:hover  ul.dropdown/*, .first-navigation li ul:hover*/{
+
+  display: block;
+  width:50%;
+}
+.first-navigation li ul.dropdown li{
+  clear: both;
+  display:block;
+}
+.first-navigation a {
+    outline: none;
+    color: white;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14.5px;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 55% 0 55% 0;
+    transition: 0.5s;
+    padding: 6px 6px;
+    display:block;
+}
+.first-navigation a:hover{
+    background-color:#fff;
+    color:black;
+}
+/*#Account-a {
+    background-color: darkcyan;
+    color: black; check back
+}*/
+.left-section {
+    /*margin-right:45%;*/
+    float:left;
+    width:660px;
+  
+}
+.left-Image-section { /*the slider images on the home section*/
+    width: 660px;
+    height: 585px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.main-div {
+    width: 660px;
+    height: 585px;
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+    background-image: url(images/pexels-photo-333525.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px black;
+    animation: slider 9s infinite linear;
+}
+@keyframes slider{
+    35% {
+        background-image: url(images/pexels-photo-1309644.jpg);
+    }
+    /*35% {
+        background-image: url(images/aircraft-jet-landing-cloud-46148.jpg); this is to change----------
+    }*/
+    75% {
+        background-image: url(images/pexels-photo-2707704.jpg);
+    }
+}
+/*.Image-container { can be deleted
+    height: 600px;
+    width: 2400px;
+    position: relative;
+    transition: left 2s;
+}
+.left-section-img {
+    float:left;
+    width: 724px;
+    height: 530px;
+    margin: 0;
+    padding: 0;
+}
+.button-container-div
+{
+    top: 550px;
+    position:absolute;
+    margin-left:250px;
+}
+.slider-button {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 20px;
+    background-color:white;
+    cursor:pointer;
+}
+.slider-button:hover
+{
+    background-color:midnightblue;
+}
+#slider-image1:target ~ .Image-container{
+    left:0px;
+}
+#slider-image2:target ~ .Image-container {
+    left: -661px;
+}
+#slider-image3:target ~ .Image-container {
+    left: -1320px;
+}*/
+#header-icon2 {
+    height: 46.5px;
+    width: 82px;
+    margin-left: 12%;
+}
+.right-section {
+    float: right;
+    margin-top: 3%;
+    margin-right: 300px;
+    /*border: 1px solid yellow;*/
+    height: 350px;
+    /*box-shadow: 0 5px 5px rgba(0,0,0,0.5);*/
+}
+.Globe-Image-Div {
+    position: relative;
+    /*margin-top: -520px;*/
+    background-color:#fff;
+   
+}
+#Map-Img { /*globe image*/
+    width: 560px;
+    height: 490px;
+    opacity: 0.09;
+}
+#our-Name-header {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 28.5px;
+    letter-spacing: 0.5px;
+}
+.text-Right-section-only {
+    margin-top: -500px;
+    position:absolute;
+}
+.right-section-container h2 {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    float: right;
+    margin-top: -32.8px;
+    margin-right: 20%;
+}
+.right-section-container h3 {
+    margin-top: 10px;
+    font-family: Georgia, 'Noto Serif', serif;
+    font-weight: bold;
+}
+.right-section-container h4 {
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.right-section-container {
+        /*border: 1px solid green;*/
+        position: relative;
+        width: 340px;
+        height: 100px;
+}
+.right-section-container ol {
+        margin-top: 10px;
+        list-style:georgian;
+    }
+.right-section-container li a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16.5px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+}
+.right-section-container li a:hover {
+      margin-top:5px;
+      color: darkslategrey;
+      background-color: whitesmoke;
+      font-family: sans-serif;
+      font-size: 20px;
+}
+
+.Anchor-line::after { /*this section is the highlighted line that appears when you hover over the list items*/
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:darkblue ;
+    transition: width .3s;
+}
+.Anchor-line:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.Btn {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: dodgerblue;
+    /*border: 2px solid dodgerblue;*/
+    padding: 8px 29px 8px 29px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.Btn:before {
+   content: attr(title);
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 8px 29px 8px 29px;
+   color: white;
+    background-color:dodgerblue;
+   transition: .5s;
+   transform-origin:right;
+   transform:translateX(-100%) rotateY(90deg);
+}
+ .Btn:after {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 29px 8px 29px;
+        color: white;
+        background-color: darkslategrey;
+        transition: .5s;
+        transform-origin: left;
+        transform: translateX(0) rotateY(0deg);
+}
+.Btn:hover:before{
+       transform: translateX(0) rotateY(0deg);
+}
+.Btn:hover:after{
+        transform:translateX(100%) rotateY(90deg);
+}
+.bottom-section {
+    /*this section is the section for the customer testimonials*/
+    /*border: 2px solid hotpink;*/
+    width: 80%;
+    height: 600px;
+    position: relative;
+    margin-top: 690px;
+    margin-left: 10%;
+    /*box-shadow: 0 15px 10px rgba(0,0,0,0.5);*/
+}
+.Cookie-Home {
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100px;
+    position:absolute;
+    margin-top:445px;
+    padding:20px 20px;
+}
+.Cookie-Home p{
+    font-size:22.5px;
+    color:white;
+    letter-spacing:0.7px;
+     text-shadow: 0 8px 8px rgba(0,0,0,0.5);
+   
+}
+#CoockieMessage {
+    background: rgba(0,0,0,0.5);
+    border: 2px solid rgba(0,0,0,0.5);
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    color: white;
+    width: 115px;
+    float: right;
+    margin-right: 40px;
+    margin-top:20px;
+    font-size: 18px;
+}
+#CoockieMessage:hover{
+    border:2px solid red;
+    color:red;
+}
+.bottom-section h1 {
+    margin-left: 30.5%; /*here---------------------------- for bottom text*/
+    font-size: 2em;
+    color: #000;
+    letter-spacing: 0.2px;
+    font-family: 'Noto Serif', serif;
+    position: absolute;
+}
+.line1 {
+    /*        line uner the headings*/
+    margin-top: 5px;
+    width: 110px;
+    border: 2px solid darkcyan;
+    position: relative;
+    margin-left: 44%;
+}
+/*thestominal section on index page----------------------------------*/
+/*#slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}*/
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#darkgirl1 {
+    width: 230px;
+    height: 285px;
+    border-radius: 10%;
+    margin-left: -72%;
+    margin-top : 25px;
+}
+#slidings1 {
+    width: 630px;
+    height: 330px;
+    /*border: 1px solid linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
+    position: relative;
+    margin-left: 13%;
+    margin-top: 10%;
+    border-radius: 2%;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+#whitehappygirl {
+    width: 230px;
+    height: 285px;
+    border-radius: 10%;
+    margin-right: -74.7%;
+    margin-top: 25px;
+}
+#slidings2 {
+    width: 630px;
+    height: 330px;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 10%;
+    border-radius: 2%;
+    background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%);
+    box-shadow: 0 15px 10px rgba(0,0,0,0.5);
+}
+#bycicleman {
+    width: 230px;
+    height: 285px;
+    border-radius: 10%;
+    margin-left: -74.7%;
+    margin-top: 25px;
+}
+#slidings3 {
+    width: 630px;
+    height: 330px;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 10%;
+    border-radius: 2%;
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+    box-shadow: 0 15px 10px rgba(0,0,0,0.5);
+}
+.slide-content {
+   /*    for the center text in the about page*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.spanz h6 {
+    font-size: 22px;
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top:-230px;
+}
+#p1{
+    /*Paragraph1 for the testimonial section*/
+    margin-left:25.5px;
+    color:black;
+    font-size:14.5px;
+    font-family:sans-serif;
+}
+#p2 {
+    /*Paragraph2 for the testimonial section*/
+    margin-left: 128px;
+    color: black;
+    font-size: 14.5px;
+    font-family: sans-serif;
+}
+.spanz1 h6 {
+    font-size: 22px;
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: -230px;
+    margin-right:260px;
+}
+#p11 {
+
+    /*Paragraph1 for the testimonial section*/
+    margin-right: 240px;
+    color: black;
+    font-size: 14.5px;
+    font-family: sans-serif;
+}
+
+#p22 {
+    /*Paragraph2 for the testimonial section*/
+    margin-right: 135px;
+    color: black;
+    font-size: 14.5px;
+    font-family: sans-serif;
+}
+#p111 {
+    /*Paragraph1 for the testimonial section*/
+    margin-left: 25.5px;
+    color: black;
+    font-size: 14.5px;
+    font-family: sans-serif;
+}
+
+#p222 {
+    /*Paragraph2 for the testimonial section*/
+    margin-left: 128px;
+    color: black;
+    font-size: 14.5px;
+    font-family: sans-serif;
+}
+
+.spanz2 h6 {
+    font-size: 22px;
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: -230px;
+}
+
+.arrow {
+    /*    this block of code creates an arrow at the left section of the page*/
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    /*    my left arrow div*/
+    border-width: 15px 19px 15px 0;
+    border-color: transparent teal transparent transparent;
+    left: 0;
+    margin-left: 7px;
+}
+
+#arrow-right {
+    /*    my right arrow div*/
+    border-width: 15px 0px 15px 19px;
+    border-color: transparent transparent transparent teal;
+    right: 0;
+    margin-right: 7px;
+}
+footer {
+    background-color: darkslategray;
+    height: 100%;
+    width: 100%;
+    padding: 8px 8px;
+    color:white;
+}
+footer p {
+    text-align:center;
+}
+ .p1s{
+     /*the footer header element*/
+    font-size:24px;
+}
+.line2 {
+    /*        lines above and uner the headings*/
+    margin-top: 3px;
+    width: 70px;
+    border: 2px solid #fff;
+    position: relative;
+    margin-left: 47%;
+}
+/*all the list items in the footer section*/
+.list1 {
+margin-top: 20px;
+}
+.list1 .ol1{
+    list-style:none;
+}
+.list1 .ol1 a {
+    text-decoration:none;
+    font-size:16.5px;
+    color:white;
+    margin-bottom:5px;
+}
+.list2 {
+margin-left: 40%;
+margin-top:-100px;
+}
+.list2 .ol2 {
+   list-style: none;
+}
+.list2 .ol2 a {
+     text-decoration: none;
+     font-size: 16.5px;
+     color: white;
+     margin-bottom: 5px;
+}
+.list3 {
+    margin-left: 80%;
+    margin-top: -100px;
+    margin-bottom:60px;
+}
+.list3 .ol3 {
+     list-style: none;
+}
+.list3 .ol3 a {
+     text-decoration: none;
+     font-size: 16.5px;
+     color: white;
+     margin-bottom: 5px;
+}
+.Anchor-line3:hover {
+    margin-top: 5px;
+    color: whitesmoke;
+    background-color: teal;
+    font-family: sans-serif;
+}
+.Anchor-line3::after { /*this section is the highlighted line that appears when you hover over the list items*/
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .3s;
+}
+.Anchor-line3:hover::after {
+    width: 30%;
+    transition: width .3s;
+}
+.Anchor-line2:hover {
+    margin-top: 5px;
+    color: whitesmoke;
+    background-color: teal;
+    font-family: sans-serif;
+}
+
+.Anchor-line2::after { /*this section is the highlighted line that appears when you hover over the list items*/
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .3s;
+}
+
+.Anchor-line2:hover::after {
+    width: 10%;
+    transition: width .3s;
+}
+.square-Scroll-Icon
+{
+    float:right;
+    border:1px solid teal;
+    width:30px;
+    height:30px;
+    margin-right:25px;
+    margin-top:-25px;
+    background-color:darkcyan;
+}
+.square-Scroll-Icon a
+{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+/*services section---------------------------------------------------------------------------------------------------------------------------------*/
+#header-img-services /*the floating header image input the service section*/ {
+    width: 100%;
+    height: 500px;
+    /*position:relative;*/
+}
+.header-service h1 {
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 25%;
+    color: #fff;
+    font-size: 58px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-shadow: 0 8px 8px rgba(0,0,0,0.5);
+}
+.body-service {
+    /*margin-top:40px;*/
+    /*border: 1px solid pink;*/
+    /* margin-left:28%;*/
+    position: absolute;
+    left:50%;
+    top:93.8%;
+    transform: translate(-50% -85.5%);
+  
+}
+.body-service span { /*these spans are for the arrow at the bottm at the service page*/
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        transform: rotate(45deg);
+        margin: -8px;
+        animation: scrolldownArrow 2s infinite;
+}
+/*arrow animation*/
+.body-service span:nth-child(2) {
+     animation-delay: -0.2s;
+     transform: rotate(45deg) translate(-20px, -20px);
+}
+.body-service span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+/*.body-service span:nth-child(1) {
+    animation-delay: .2s;
+}*/
+/*arrow animation keyframe*/
+@keyframes scrolldownArrow
+{
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.Card-body-section {
+    margin-left: 10%;
+    margin-top: 45px;
+}
+.box-card /* the section for all the cards with the images inside*/ {
+    /*border: 1px solid blue;*/
+    margin-top: 5%;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    /*margin-left: 2%;*/
+    grid-gap: 21px;
+}
+.box-card .card-hearder-image { /*the shape on the inside of the cards*/
+    position: relative;
+    width: 340px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+.card-hearder-image img
+{
+    width:100%;
+    height:135px;
+}
+.card-text-button /*form the button command text section*/
+{
+    margin-top:30px;
+    margin-left:20%;
+}
+.card-text-button p
+{
+    font-size:24px;
+    font-weight:bold;
+
+}
+.card-text-button .Button-Class { /*this is the button in each acard section when ever one of these buttons gets pressed it brings to the booking section*/
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    border: 2px solid darkslategray;
+    padding: 8px 25px 8px 25px;
+    margin-left: 20px;
+}
+
+ .card-text-button .Button-Class:hover {
+  color: whitesmoke;
+  background-color: darkslategray;
+}
+.Footer-service /*the space between the body and the footer section*/
+{
+    margin-top:40px;
+}
+
+/*booking section---------------------------------------------------------------------------------------------------------------------------*/
+.BookingForm {
+    margin-left: 5%;
+}
+.member-Sectionz1 {
+    width: 100%;
+    height: 85px;
+    position: relative;
+    /*box-shadow: 0 8px 8px rgba(0,0,0,0.5);*/
+}
+.border-Arround-Form {
+    
+    margin-left: 10%; margin-top:-20px;/*///////*/
+    background-color: whitesmoke;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.5);
+    width:75%;
+}
+
+.additional-iconbookings {
+    height: 20px; /*ribbon div icon in booking page*/
+    position: absolute;
+    background-color: darkcyan;
+    width: 82px;
+    margin-left: 10%;
+    margin-top: -5px
+}
+.Booking-Main .H20 {
+    margin-left: 17%;
+    font-size: 32px;
+    margin-top:5%;
+}
+.Typing {
+    position: relative;
+    margin-left: 29.9%;
+    margin-top: -20px;
+    /*anything after this can be deleted for typewritter effect*/
+    /*left: 68px;*/
+    width: 1px;
+    /*height: 63%;*/
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden; transform: translateY(-50%);
+}
+.aim-Typewritter
+{
+    animation: Typewriter 4s steps(40) 1s normal both,blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes Typewriter{
+    from{
+        width:0;
+    }
+    to{
+        width:294px;
+    }
+}
+@keyframes blinkTextCursor {
+    from{
+border-right-color:black;
+    }
+    to{
+        border-right-color:transparent;
+    }
+}
+/*.Typing::after{ will come back to this for the tipewritter effect----------------------
+    margin-top:11px;
+    content: "";
+    position: absolute;
+    left: 68px;
+    width: 1px;
+    height: 63%;
+    border-right: 2px solid black;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}*/
+@media(min-width: 1200px) {
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 800px) {
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 500px) {
+    h2 {
+        font-size: 26px;
+    }
+}
+.sd1bookings {
+    /*the ribbon that is under the image logo*/
+    height: 40px;
+    position: relative;
+    background-color: darkcyan;
+    width: 100%;
+    margin-bottom: 170px;
+}
+.sd1bookings:before, .sd1bookings:after {
+     /*the ribbon that is under the image logo*/
+        margin-top:-20px;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 80%;
+        top: 10px;
+        left: 0;
+        background-color: darkcyan;
+        transform: skewY(20deg);
+        z-index: -1;
+}
+
+.sd1bookings:after {
+        transform: skewY(-20deg);
+}
+.BookingText { /*all the textboxes int the booking page*/
+    padding: 27px 33px 8px 0; /*should be 10*/
+    margin-bottom: -2px;
+    font-size: 18.5px;
+    margin-left: -1.5px;
+}
+.Booking-Main .BookingText { /*all the textboxes int the booking page*/
+    box-sizing: border-box;
+    box-shadow: none;
+    outline:none;
+}
+.Booking-Main div {
+    position: relative;
+}
+.Booking-Main .BookingLabel{ /*the words inside the textboxes*/
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    transition: .5s;
+    color: darkslategrey;
+    top: 22.5px;
+    bottom: 0px; /*I*/
+    width: 100%;
+    height: 100%;
+}
+.Booking-Main .BookingText:focus ~ .BookingLabel,
+.Booking-Main .BookingText:valid ~ .BookingLabel {
+    top: -2px;
+    left: 0;
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Booking-Main .BookingLabel1 { /*the words inside the textboxes*/
+    position: absolute;
+    pointer-events: none;
+    /*left: 0;*/
+    transition: .5s;
+    color: darkslategrey;
+    top: 22.5px;
+    bottom: 0px; /*I*/
+    width: 100%;
+    height: 100%;
+}
+.BookingText1 { /*all the textboxes int the booking page*/
+    padding: 27px 33px 8px 2px; /*should be 10*/
+    margin-bottom: -2px;
+    font-size: 18.5px;
+    margin-left:-1.5px;
+}
+.Booking-Main .BookingText1 { /*all the textboxes int the booking page*/
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+}
+.BookingLabel1 {
+    position: absolute;
+    pointer-events: none;
+    left: 35%;
+    transition: .5s;
+    color: black;
+    top: 11px;
+    
+}
+.BookingText1:focus + .BookingLabel1,
+.BookingText1:valid + .BookingLabel1 {
+    top: -1.9px;
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*thinking to delete------------------------------------------------*/
+.Booking-Main .BookingText12 {
+    position: absolute;
+    pointer-events: none;
+    left: 16.2%;
+    transition: .5s;
+    color: darkslategrey;
+    bottom: 5px; 
+    width: 200px;
+    height: 100%;
+}
+.Booking-Main .BookingText123 {
+    position: absolute;
+    pointer-events: none;
+    left: 38%;
+    transition: .5s;
+    color: darkslategrey;
+    bottom: 5px;
+    width: 200px;
+    height: 100%;
+}
+.BookingText12 { /*all the textboxes int the booking page*/
+    padding: 27px 33px 8px 2px; /*should be 10*/
+    margin-bottom: -2px;
+    font-size: 18.5px;
+    margin-left: -1.5px;
+}
+
+.Booking-Main .BookingText12 { /*all the textboxes int the booking page*/
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+}
+.BookingLabel12 {
+    position: absolute;
+    pointer-events: none;
+    left: 35%;
+    transition: .5s;
+    color: black;
+    top: 11px;
+}
+.BookingText1:focus ~ .BookingLabel12 {
+    top: -1.9px;
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: bold;
+}
+.BookingText123 { /*all the textboxes int the booking page*/
+    padding: 27px 33px 8px 2px; /*should be 10*/
+    margin-bottom: -2px;
+    font-size: 18.5px;
+    margin-left: -1.5px;
+}
+
+.Booking-Main .BookingText123 { /*all the textboxes int the booking page*/
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+}
+
+.BookingLabel123 {
+    position: absolute;
+    pointer-events: none;
+    left: 35%;
+    transition: .5s;
+    color: black;
+    top: 11px;
+}
+.BookingText1:focus ~ .BookingLabel123 {
+    top: -1.9px;
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*thinking to delete------------------------------------------------*/
+.Refresh-Btnz
+{
+  padding: 2px;
+  font-weight:bold;
+  font-size:22px;
+ /*margin-top:-60px;*/
+ border-style:none;
+}
+.Email-Password-Btn
+{
+    margin-top:-39px;
+    margin-left: 66%;
+}
+.refresh-cardz {
+    margin-top: -39px;
+    margin-left: 34.2%;
+}
+.Country-Btnz {
+    font-size: 22px;
+    /*margin-top:-60px;*/
+    border-style: none;
+    font-family:sans-serif;
+}
+.h1-bookings {
+    color: darkslategray;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    font-family: 'Noto Serif', serif;
+    margin-bottom:5px;
+}
+
+/*Admin Page ---------------------------------------------------------------------------------------------------------------------------------*/
+.containerz {
+    background-color: darkslategray;
+    width: 360px;
+    height: 360px;
+    border: 1px solid darkslategrey;
+    position: relative;
+    box-shadow: 0 5px 9px rgba(0,0,0,0.5);
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.containerz .labelzall {
+ color: white;
+ font-size: 15.5px;
+ letter-spacing: 0.5px;
+}
+
+.Label1 {
+    font-size: 18.5px;
+}
+
+.containerz-Elements { /*the elements inside the container*/
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.containerz-Elements .LogoutAccount 
+{
+   margin-left: -3px;
+}
+.aboutbtn {
+    margin-top: 20px;
+    color: black;
+    background-color: slategrey;
+    width: 125px;
+    height: 28px;
+    text-decoration: none;
+    padding: 4px 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid slategrey;
+    letter-spacing: 0.5px;
+    font-size: 15.5px;
+}
+.LogoutAccount {
+    margin-top: 20px;
+    color: White;
+    background-color: black;
+    width: 125px;
+    height: 28px;
+    text-decoration: none;
+    padding: 4px 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    letter-spacing: 0.5px;
+    font-size: 15.5px;
+}
+.aboutbtn:hover {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+.LogoutAccount:hover {
+        background-color: darkgrey;
+        border: 1px solid darkgrey;
+        color: #000;
+}
+
+#configCode {
+    color: White;
+    background-color: darkslateblue;
+    width: 22px;
+    height: 25px;
+    text-decoration: none;
+    padding: 2px 2px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid darkslateblue;
+    font-weight: bold;
+}
+#showHideForm {
+    width: 710px;
+    background-color: darkslategray;
+    height: 360px;
+    border: 1px solid darkslategrey;
+    position: relative;
+    box-shadow: 0 5px 9px rgba(0,0,0,0.5);
+    margin-top: -362px;
+    margin-left:31.9%;
+}
+#showHideDataGridDiv {
+    width: 1080px;
+    background-color: darkslategray;
+    height: 410px;
+    border: 1px solid darkslategrey;
+    position: relative;
+    box-shadow: 0 5px 9px rgba(0,0,0,0.5);
+    margin-left: 5%;
+    margin-top: 15px;
+}
+.WebApi-Section{
+    margin-left:38%;
+    margin-top:5%;
+}
+#Button1Get {
+    margin-top: 5px;
+    color: White;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    padding: 2px 2px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    letter-spacing: 0.5px;
+    font-size: 15.5px;
+    margin-right:5px;
+}
+#ButtonPost {
+    margin-top: 5px;
+    color: White;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    padding: 2px 2px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    letter-spacing: 0.5px;
+    font-size: 15.5px;
+}
+.WebApi-Section h1 {
+    color: white;
+}
+.admin-Alter-Section {
+    margin-top: 45px;
+}
+.left-side-Admin-Pagez {
+    margin-top: 15px;
+    margin-left: 5%;
+    position: relative;
+    width: 273px;
+    height: 290px;
+}
+.right-side-Admin {
+    margin-top: -290.8px;
+    margin-left:52%;
+    position:relative;
+}
+.Admin-Btn-Section {
+    margin-top: 39.5px;
+    position:relative;
+    margin-left:5%;
+}
+.linkViewz1 { /*link button*/
+    outline: none;
+    padding: 5px 5px;
+    width: 140px;
+    height: 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-size: 16.5px;
+    color: white;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.linkViewz1:hover {
+ color: White;
+ background-color: plum;
+ border: 1px solid plum;  
+}
+.AdminLabelz {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color:transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+ 
+}
+.AdminLabelz:focus {
+    border-bottom: 2px solid lightblue;
+}
+.AdminLabel1{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.AdminLabelfirst {
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin-top:8px;
+}
+#TextBoxForGender {
+width:219px;
+}
+#TextBoxForDOB {
+    width: 235px;
+}
+#TextBoxForTele {
+    width: 245px;
+}
+#TextBoxForEmail {
+    width: 270px;
+}
+#TextBoxForPassCode {
+    width: 247px;
+}
+#TextBoxForAccountType {
+    width: 219px;
+}
+#TextBoxForCardNumber {
+    width: 211px;
+}
+.X-ButnAdminz {
+    border-radius: 50%;
+    color: lightskyblue;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid lightskyblue;
+    float: right;
+    margin-right:5px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+/*Sign up Page---------------------------------------------------------------------------------------------------*/
+.Sign-Up-Body {
+    background-image: url(images/therealsky.jpg);
+    width: 100%;
+    height: 600px;
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+}
+.Signup_form-Section-EL {
+    margin-top: 9%;
+    position: absolute;
+    margin-left: 35%;
+    width: 670px;
+    height: 430px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 10px 1px darkblue;
+    /*border-radius: 5%;*/ /*to be looked at*/
+}
+.Signup_form-Section-Back {
+    margin-top: 3.5%;
+    /*border-radius:5%;*/ /*to be looked at*/
+    margin-left: 14%;
+    width: 450px;
+    height: 430px;
+    /*padding: 80px 40px;*/
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    background-image: url(images/closePins.jpg);
+}
+.Signup_form-Section-div h1 {
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-top: -29%;
+    margin-left: 16%;
+    font-family: 'Noto Serif', serif;
+}
+.Signup_TextBoxes{
+border: none;
+border-bottom: 1px solid #fff;
+background-color:transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+}
+.Signup_TextBoxes:focus {
+    border-bottom: 2px solid darkblue;
+}
+#TextBoxforSignConfirPWord {
+    width:175px;
+}
+#TextBoxforSignEmail {
+    width: 230px;
+}
+#TextBoxforSignPword {
+    width: 200px;
+}
+#TextBoxforSignDOB {
+    width: 236px;
+}
+.Signup_Labelz {
+    color: white;
+    font-size: 16.5px;
+    letter-spacing: 0.8px;
+}
+.right-Section-Items-Sign {
+    float: right;
+    margin-top: -296px;
+    margin-right:-15px;
+}
+.left-Section-Items-Sign
+{
+    margin-top:-68px;
+}
+.My-DropdowList {
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+}
+.SignUp-Btn-Section
+{
+    margin-top:75px;
+}
+#ButtonSIgnzSignUpZ1 {
+    background: rgba(0,0,0,0.5);
+    width: 120px;
+    padding: 6px 6px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 8px 8px rgba(0,0,0,0.5);
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+#ButtonSIgnzSignUpZ1:hover {
+    background: rgba(0,0,0,0.5);
+    border: 2px solid deepskyblue;
+    color: deepskyblue;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+.ButtonSIgnzLoginZ1ClearZ1 {
+        color: #fff;
+        background: rgba(0,0,0,0.5);
+        width: 120px;
+        padding: 6px 6px;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+        margin-right: 5px;
+     
+}
+.ButtonSIgnzLoginZ1ClearZ1:hover {
+        background: rgba(0,0,0,0.5);
+        border: 2px solid lime;
+        color: limegreen;
+        font-size: 13.5px;
+}
+
+
+/*Login Page----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.LoGIn-Up-Body {
+    background-image: url(images/Balloons.jpg);
+    width: 100%;
+    height: 600px;
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+}
+#MyImage {
+    /*background-repeat: no-repeat;
+    width: 1350px;*/
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin-left: 99px;
+    margin-top: -110px;
+    position:absolute;
+    opacity:0.5;
+}
+.loginBox1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 460px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 10px 1px darkblue;
+}
+.Login-TextBoxes {
+    border: none;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 90%;
+    cursor:pointer;
+}
+.Login-TextBoxes:focus
+{
+     border-bottom: 2px solid darkblue;
+}
+.EyeIcon
+{
+    position:absolute;
+    font-size:24px;
+    margin-top:35px;
+    margin-left:165px;
+    cursor:pointer;
+}
+.EyeIcon.active{
+    color:blue;
+
+}
+.text-in-Login
+{
+    color:white;
+}
+#Mag-Login-Head {
+    font-size: 22.5px;
+    letter-spacing: 0.8px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    margin-top:-20px;
+}
+.aTag-in-Login{
+    text-decoration:none;
+    color:Highlight;
+    font-size:14.5px;
+
+}
+.aTag-in-Login:hover{
+    color:white;
+}
+.Submit-Box-Login {
+background: rgba(0,0,0,0.5);
+width: 120px;
+padding: 6px 6px;
+cursor: pointer;
+color: white;
+text-shadow: 0 8px 8px rgba(0,0,0,0.5);
+letter-spacing: 0.5px;
+font-weight: bold;
+    margin-right: 5px;
+}
+.Clear-Box-Login {
+    background: rgba(0,0,0,0.5);
+    width: 120px;
+    padding: 6px 6px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 8px 8px rgba(0,0,0,0.5);
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.Submit-Box-Login:hover {
+    background: rgba(0,0,0,0.5);
+    border: 2px solid lime;
+    color: limegreen;
+    font-size: 13.5px;
+}
+.Clear-Box-Login:hover {
+    background: rgba(0,0,0,0.5);
+    border: 2px solid orangered;
+    color: orangered;
+    font-size: 13.5px;
+}
+
+/*Contact Page Section-----------------------------------------------------------------------------------------------------------------------------*/
+.ContactPage-Body {
+    background-image: url(images/contactPhone.jpg);
+    width: 100%;
+    height: 760px;
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+}
+.right-Section-Contact{
+    margin-top:5%;
+    margin-left:66%;
+    position:relative;
+}
+.right-Section-Contact h6{
+    color:white;
+    font-size:18px;
+    letter-spacing:0.5px;
+}
+.right-Section-Contact h5{
+    color:white;
+    font-size:18px;
+    letter-spacing:0.5px;
+}
+#Clickme-Contact
+{
+    width:110px;
+    padding:5px 5px;
+   color:black;
+   background-color:deeppink;
+   border:2px solid deeppink;
+   font-size:16.8px;
+}
+#Clickme-Contact:hover{
+    background-color:silver;
+    border:2px solid silver;
+}
+.Login-Form-Loginz {
+    margin-top: 3%;
+    margin-left: 66%;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    height:350px;
+    width:390px;
+}
+#User-Contact-Btn {
+    float: right;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: lightskyblue;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid lightskyblue;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.Login-Form-Loginz input[type="text"] {
+    border: none;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width:90%;
+}
+.Login-Form-Loginz textarea {
+    border: none;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    outline: none;
+    height: 75px;
+    width: 90%;
+    color: #fff;
+    font-size: 16px;
+}
+.Login-Form-Loginz input[type="submit"], .Login-Form-Loginz input[type="reset"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: aliceblue;
+    font-size: 16px;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    width:120px;
+    padding:5px 5px;
+}
+
+.Login-Form-Loginz input[type="submit"]:hover, .Login-Form-Loginz input[type="reset"]:hover {
+
+    color: plum;
+    border:2px solid plum;
+}
+.Login-Form-Loginz label{
+    color:white;
+    font-size:16px;
+}
+.Login-FormPage-Items{
+    margin-left:5%;
+    margin-top:10px;
+}
+/*About Page section---------------------------------------------------------------------------------*/
+.AboutPage-Body {
+    background-image: url(images/HandFlyPlane.jpg);
+    width: 98.9%;
+    height: 670px;
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+}
+.Container-Body-About {
+    margin-top: 5%;
+    margin-left: 26%;
+    width: 690px;
+    height: 465px;
+    position: absolute;
+    box-shadow: 0 5px 9px rgba(0,0,0,0.5);
+   
+}
+.Container-Body-About img{
+    width:690px;
+    height:465px;
+}
+.ribbon{
+    width:200px;
+    height:50px;
+    position:absolute;
+}
+.ribbon-1 {
+    background: linear-gradient(to left, #b20a2c, #fffbd5);
+    background: -moz-linear-gradient(to left, #b20a2c, #fffbd5);
+    background: -webkit-linear-gradient(to left, #b20a2c, #fffbd5);
+    background: -ms-linear-gradient(to left, #b20a2c, #fffbd5);
+    top:15px;
+    right:-25px;
+}
+.ribbon-1:before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        right: 0;
+        border-left: 13px solid #6a0b06;
+        border-right: 13px solid transparent;
+        border-top: 13px solid #6a0b06;
+        border-bottom: 13px solid transparent;
+}
+.ribbon-1:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -50px;
+    border-left: 26px solid transparent;
+    border-right: 26px solid #fffbd5;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+.ribbon-2 {
+    background: linear-gradient(to right, #b20a2c, #fffbd5);
+    background: -moz-linear-gradient(to right, #b20a2c, #fffbd5);
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);
+    background: -ms-linear-gradient(to right, #b20a2c, #fffbd5);
+    top: 15px;
+    left: -25px;
+}
+
+.ribbon-2:before {
+   content: "";
+   position: absolute;
+   top: 50px;
+   left: 0;
+   border-left: 13px solid transparent;
+   border-right: 13px solid #6a0b06;
+   border-top: 13px solid #6a0b06;
+   border-bottom: 13px solid transparent;
+}
+.ribbon-2:after{
+
+    content:"";
+    position:absolute;
+    top:-1px;
+    right:-50px;
+    border-left: 26px solid #fffbd5;
+    border-right: 26px solid transparent;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+.ribbon-3 {
+    background: linear-gradient(to right, #b20a2c, #fffbd5);
+    background: -moz-linear-gradient(to right, #b20a2c, #fffbd5);
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);
+    background: -ms-linear-gradient(to right, #b20a2c, #fffbd5);
+    top: 390px;
+    left: -25px;
+}
+
+.ribbon-3:before {
+   content: "";
+   position: absolute;
+   top: -25px;
+   left: 0;
+   border-left: 13px solid transparent;
+   border-right: 13px solid #6a0b06;
+   border-top: 13px solid transparent;
+   border-bottom: 13px solid #6a0b06;
+}
+.ribbon-3:after{
+
+    content:"";
+    position:absolute;
+    top:-1px;
+    right:-50px;
+    border-left: 26px solid #fffbd5;
+    border-right: 26px solid transparent;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+.ribbon-4 {
+    background: linear-gradient(to left, #b20a2c, #fffbd5);
+    background: -moz-linear-gradient(to left, #b20a2c, #fffbd5);
+    background: -webkit-linear-gradient(to left, #b20a2c, #fffbd5);
+    background: -ms-linear-gradient(to left, #b20a2c, #fffbd5);
+    top:390px;
+    right:-25px;
+}
+    .ribbon-4:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: 0;
+        border-left: 13px solid #6a0b06;
+        border-right: 13px solid transparent;
+        border-top: 13px solid Transparent;
+        border-bottom: 13px solid #6a0b06;
+    }
+.ribbon-4:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -50px;
+    border-left: 26px solid transparent;
+    border-right: 26px solid #fffbd5;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+#About-Section_Header {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    border:1px solid silver;
+    margin-top:6%;
+    margin-left:48.2%;
+    position:absolute;
+}
+.text-section-abt {
+    margin-top: -48%;
+    margin-left: 12%;
+    width: 510px;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+}
+.text-section-abt h1{
+    color:white;
+    text-align:center;
+    text-shadow: 0 8px 8px rgba(0,0,0,0.5);
+    opacity:5;
+    
+}
+.text-section-abt h3 {
+   color: white;
+
+   text-align: center;
+   font-size: 19.5px;
+   letter-spacing: 0.9px;
+   font-family:'Noto Serif', serif;
+}
+#arrow-leftz1 {
+    /*    my left arrow div*/
+    border-width: 15px 19px 15px 0;
+    border-color: transparent teal transparent transparent;
+    left: 0;
+    margin-left: 7px;
+    margin-top:3px;
+}
+
+#arrow-rightz1 {
+    /*    my right arrow div*/
+    border-width: 15px 0px 15px 19px;
+    border-color: transparent transparent transparent teal;
+    right: 0;
+    margin-right: 23.3%;
+    margin-top:27.5px;
+}
